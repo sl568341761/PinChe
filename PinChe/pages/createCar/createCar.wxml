@@ -1,0 +1,38 @@
+<view>
+  <form bindsubmit='formSubmit'>
+    <view>
+      <view class="space">联系方式（手机和微信号至少填一项）</view>
+      <block wx:for="{{ContactInfos}}" wx:for-item="ContactInfo">
+        <view class="wa-input-item">
+          <text class="wa-input-label">{{ContactInfo.name}}</text>
+          <input name='{{ContactInfo.formName}}' class="wa-input" placeholder="{{ContactInfo.placeholder}}" value="" />
+        </view>
+      </block>
+    </view>
+    <view>
+      <view class="space">拼车信息</view>
+      <block wx:for="{{PinCheInfos}}" wx:for-item="PinCheInfo">
+        <view class="wa-input-item">
+          <text class="wa-input-label">{{PinCheInfo.name}}</text>
+          <input name='{{PinCheInfo.formName}}' class="wa-input" placeholder="{{PinCheInfo.placeholder}}" value="" bindtap='navigateToMap'/>
+        </view>
+      </block>
+    </view>
+    <view>
+      <view class="space">备注</view>
+      <view class='wa-input-item'>
+        <textarea name='{{remark.formName}}' style='height:100rpx;' placeholder='你想对乘客说点什么'></textarea>
+      </view>
+    </view>
+    <view>
+      <view class='btn-area'>
+        <button class='btn-submit' type='warn' form-type='submit'>发布</button>
+      </view>
+    </view>
+    <view>
+      <view class='btn-area'>
+        <button class='btn-submit' type='warn' bindtap='clearStorage'>qingchuhuancun</button>
+      </view>
+    </view>
+  </form>
+</view>

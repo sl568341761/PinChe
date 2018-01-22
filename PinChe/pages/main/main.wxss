@@ -1,0 +1,56 @@
+.swiper-tab{
+  width: 100%; 
+  border-bottom: 2rpx solid #777777; 
+  text-align: center; 
+  line-height: 80rpx;
+}
+.swiper-tab-list{
+  font-size: 30rpx; 
+  display: inline-block; 
+  width: 33.33%; 
+  color: #777777; 
+}
+.on{
+  color: #da7c0c; 
+  border-bottom: 5rpx solid #da7c0c;
+}
+.swiper-box{ 
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+ }
+.swiper-box view{ 
+  text-align: center; 
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrp {
+  height: 100px;
+  display: flex;
+  background-color: #fff;
+}
+
+.wa-item{
+  width: 100%;
+  border: 1px solid #ddd;
+  margin: -1px 0;  
+  font-size: 16px;
+  display: block;
+  color: #444;
+  padding:10px;
+  height: 40px;
+  box-sizing: border-box;
+  position:relative;
+}
+.wa-item-ava{
+  min-height: 60px;
+}

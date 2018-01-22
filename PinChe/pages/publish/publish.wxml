@@ -1,0 +1,10 @@
+<view>
+  <view>
+    <view class="section">
+      <view class="btnGroup">
+        <button class='item' bindtap='createCar'>发布车找人</button>
+        <button class='item'>发布人找车</button>
+      </view>
+    </view>
+  </view>
+</view>
